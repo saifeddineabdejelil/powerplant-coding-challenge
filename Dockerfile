@@ -4,7 +4,6 @@ WORKDIR /app
 
 # Copy the project file and restore any dependencies (use .csproj for the project name)
 COPY PowerPlant.Api/*.csproj ./
-COPY PowerPlant.Tests/*.csproj ./
 RUN dotnet restore
 
 # Copy the rest of the application code
